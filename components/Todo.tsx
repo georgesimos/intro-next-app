@@ -1,10 +1,10 @@
 'use client';
 
 import { completeTodo } from '@/utils/actions';
-import { Todo } from '@prisma/client';
+import { Todo as ITodo } from '@prisma/client';
 import { useTransition } from 'react';
 
-export default function Todo({ todo }: { todo: Todo }) {
+export default function Todo({ todo }: { todo: ITodo }) {
   const [isPending, startTransition] = useTransition();
 
   return (
